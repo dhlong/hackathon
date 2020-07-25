@@ -13,7 +13,6 @@ def run():
 	def find(u):
 		while parent[u] != u:
 			u, parent[u] = parent[u], parent[parent[u]]
-			# u = parent[u]
 		return u
 
 
@@ -55,7 +54,5 @@ def run():
 			if cur_res != res_stack[-1]:
 				parent[vroot] = vroot
 				rank[uroot] = urank
-
-
 
 run()
